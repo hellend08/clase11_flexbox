@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'robotoBold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+body {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+header {
+    background-color: #222222;
+    height: 100px;
+    font-family: 'roboto';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 234px;
+}
+
+.logo p {
+    font-family: 'robotoBold';
+    font-size: 24px;
+    color: #39B24A;
+}
+
+.logo p span:last-child {
+    color: #FC200C;
+}
+
+a {
+    text-decoration: none;
+    color: #F3F3F3;
+
+}
+
+ul li {
+    list-style: none;
+    color: #F3F3F3;
+    font-size: 16px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 284px;
+}
+
+.menu-responsive {
+    display: none;
+}
+
+main {
+    padding: 35px 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'robotoBold';
+    flex-wrap: wrap-reverse;
+}
+
+.delivery {
+    background-image: url('../img/delivery.jpg');
+    width: 490px;
+    height: 350px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.pizzas-top {
+    width: 491px;
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.pizzas-top div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 385px;
+}
+
+h2 {
+    padding: 20px;
+    color: #FC200C;
+    font-size: 24px;
+}
+
+.pizzas-top h2 {
+    text-align: center;
+}
+
+.pizzas-top h3 {
+    font-size: 20px;
+    text-align: left;
+    margin: 40px auto 10px 45px;
+}
+
+span {
+    color: #FFFFFF;
+}
+
+footer {
+    height: 150px;
+    background-color: #222222;
+    font-family: 'roboto';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer ul {
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+
+    main {
+        padding: 47px 10px 47px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-responsive {
+        display: block;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+    }
+}
